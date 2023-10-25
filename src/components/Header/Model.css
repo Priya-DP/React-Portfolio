@@ -1,0 +1,113 @@
+
+.Model
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Model_container
+{
+    
+    background: linear-gradient(45deg, rgb(182, 236, 131), rgb(8, 145, 70)); 
+    color: black;  
+    max-width: 350px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px #999;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 410px;
+    bottom: 70px;
+    font-weight: 600;
+    
+    
+}
+.Model_content
+{
+    flex: 1;
+    padding: 1px 20px;
+    padding-top: 25px;
+    line-height: 25px;
+}
+
+.Model_title
+{
+    padding: 1px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 35%;
+    text-transform: uppercase;
+}
+
+
+
+.Model_footer
+{
+    padding: 12px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.Model_footer .btn
+{
+    color: black;
+}
+
+.Model_close
+{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    top: 0.2rem;
+    right: 1rem;
+    cursor: pointer;
+    color: black;
+}
+
+.Model_close:hover
+{
+    color: white
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    .Model_container
+{
+    
+    left: 0px;
+    bottom: 0px;
+    height: 270px;
+   
+}
+
+.Model_content
+{
+   
+    padding-top: 15px;
+    line-height: 25px;
+}
+
+.Model_close
+{
+    
+    top: 0.8rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+
+}
+
+
+

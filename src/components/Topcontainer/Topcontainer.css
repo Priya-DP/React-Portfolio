@@ -1,0 +1,9 @@
+
+.topcontainer{
+    background: url('../../assets/img9.jpeg');
+    height: 130vh;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+     box-shadow: inset 0 0 0 2000px rgba(172, 165, 165, 0.2);
+}

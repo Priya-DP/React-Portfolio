@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:wght@300;600&display=swap');
+
+.Contactmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgba(248, 244, 244,0.5);
+    font-family: "Montserrat",sans-serif;
+}
+
+.Contactmain__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    font-family: "Montserrat",sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+.Contactmain_card {
+    position: relative;
+    width: 370px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05) inset -5px -5px 5px rgba(255, 255, 255, 0.5) 5px 5px 5px rgba(0, 0, 0, 0.05) -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*  CONTAINER FORM  */
+
+label{
+    color:Black ;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 600px;
+    border: none;
+    background:transparent;
+    cursor: pointer;
+}
+
+form input:empty
+{
+    background: linear-gradient(45deg, rgb(109, 247, 109), rgb(8, 145, 70));   
+}
+
+form input, form textarea
+{
+    margin-bottom: 1rem;
+    padding: 11px 10px;
+    font-size: 1rem;
+    background: linear-gradient(45deg, rgb(109, 247, 109), rgb(8, 145, 70));
+    color: black;
+    border: none;
+}
+
+.btn
+{
+    color: black;
+    background-color: white;
+    padding: 8px 5px;
+    font-size: 20px;
+    font-weight: 300;
+    border: 1px solid rgb(8, 145, 70); 
+    justify-content: center;
+    text-align: center;
+   font-family: "Montserrat",sans-serif;
+   margin-bottom: 20px;
+}
+
+input:hover,textarea:hover
+{
+    border: 1px solid rgba(10, 129, 36, 0.8);
+}
+.btn:hover{
+    background: linear-gradient(65deg, rgb(109, 247, 109), rgb(8, 145, 70));
+    font-weight: 600;
+    border: none;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    border: 1px solid rgb(12, 94, 9);
+}
+
+.Contactmain_card:hover .Contactmai_form
+{
+    transform: translateY(-50px);
+    box-shadow:  0 10px 180px rgba(74, 255, 2, 0.6);
+    transition: 0.5s;
+    
+    
+}
+
+
+/**CONTACT */
+.Contactmain_box {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    right: 20px;
+    bottom: 5px;
+    background: linear-gradient(75deg, rgb(205, 240, 205), rgb(178, 240, 119));
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.01);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+/***** contact ***/
+.Contactmain_Contact
+{
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.Contactmain_location
+{
+    
+    margin-right: 10px;
+    margin-left: 30px;
+    font-family: "Montserrat",sans-serif;
+}
+
+.Contactmain_location p{
+    line-height: 10px;
+    font-family: "Montserrat",sans-serif;
+}
+
+
+.Contactmain_phone
+{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 30px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+}
+
+.Contactmain_phone h4{
+    line-height: 20px;
+}
+
+.Contactmain_email{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 30px; 
+    font-family: "Montserrat",sans-serif;
+}
+
+.Contactmain_email h4{
+    line-height: 20px;
+    font-family: "Montserrat",sans-serif;
+}
+
+.Contactmain_map
+{
+    width: auto;
+    
+}
+
+
+.Contactmain_card:hover .Contactmain_box {
+    transform: translateY(-70px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(75deg, rgb(109, 247, 109), rgb(8, 145, 70));
+}
+
+.Contactmain_content {
+    padding: 20px;
+    text-align: center;
+}
+
+.Contactmain_h2 {
+    position: absolute;
+    top: 20px;
+    right: 130px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    pointer-events: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.Contactmain_h3 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.Contactmain_p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+
+.Contactmain_card:hover .Contactmain_box .Contactmain_content h3,
+.Contactmain_card:hover .Contactmain_box .Contactmain_content p {
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .Contactmain_card {
+       
+        margin: 50px;
+      
+    }
+}

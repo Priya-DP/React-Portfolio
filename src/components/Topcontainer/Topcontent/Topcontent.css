@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:wght@300;600&display=swap');
+
+.topcontent {
+    color: white;
+    position: relative;
+}
+
+.topcontent__container {
+    position: absolute;
+    top: 280px;
+    left: 270px;
+}
+
+.topcontent__container>p {
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 12px;
+
+}
+
+.topcontent__container>a>button {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.topcontent__container>h1 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.topcontent__container>h1>span {
+    display: inline-block;
+    animation: animate 1s ease-in-out;
+
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0%;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 1.7s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 2.3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 2.7s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 3.2s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 3.7s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 4s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 4.2s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: 4.7s;
+}
+
+h1 span:nth-child(11) {
+    animation-delay: 5s;
+}
+
+h1 span:nth-child(12) {
+    animation-delay: 5.2s;
+}
+
+h1 span:nth-child(13) {
+    animation-delay: 5.7s;
+}
+
+h1 span:nth-child(14) {
+    animation-delay: 6s;
+}
+
+h1 span:nth-child(15) {
+    animation-delay: 6.2s;
+}
+
+h1 span:nth-child(16) {
+    animation-delay: 6.7s;
+}
+
+h1 span:nth-child(17) {
+    animation-delay: 7s;
+}
+
+h1 span:nth-child(18) {
+    animation-delay: 7.2s;
+}
+
+h1 span:nth-child(19) {
+    animation-delay: 7.7s;
+}
+
+h1 span:nth-child(20) {
+    animation-delay: 8s;
+}
+
+h1 span:nth-child(21) {
+    animation-delay: 8.2s;
+}
+
+h1 span:nth-child(22) {
+    animation-delay: 8.7s;
+}
+
+h1 span:nth-child(23) {
+    animation-delay: 9s;
+}
+
+.topcontent__container h1:hover {
+    font-size: 40px;
+    cursor: grab;
+
+}
+
+.topcontent__downloadbtn {
+    color: white;
+    background-color: rgb(8, 145, 70);
+    font-size: 14px;
+    padding: 13px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    margin: right;
+}
+
+.topcontent__myworkbtn {
+    color: white;
+    border: 1px solid white !important;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.topcontent__downloadbtn:hover {
+    color: rgb(8, 145, 70);
+    background-color: white;
+    font-weight: 600;
+
+}
+
+.topcontent__myworkbtn:hover {
+    background-color: rgb(8, 145, 70);
+    color: black;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    .topcontent__container {
+        position: absolute;
+        top: 220px;
+        left: 30px;
+        font-size: 14px;
+    }
+
+    .topcontent__container>h1 {
+        font-size: 30px;
+    }
+
+    .topcontent__container>h1>span {
+        color: white;
+
+    }
+
+    .topcontent__downloadbtn {
+        font-size: 12px;
+        padding: 10px 8px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+        margin: right;
+    }
+
+    .topcontent__downloadbtn:hover {
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+    .topcontent__myworkbtn {
+
+        font-size: 12px;
+        padding: 9px 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    .topcontent__myworkbtn:hover {
+        font-size: 14px;
+        font-weight: 900;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .topcontent__container {
+        top: 200px;
+    }
+    .topcontent__container>h1
+    {
+        font-size: 26px;
+    }
+
+    .topcontent__container>h1:hover
+    {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:wght@300;600&display=swap');
+
+.projectcontainer
+{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(109, 247, 109) ,rgb(8, 145, 70),rgb(109, 247, 109));
+
+}
+.projectcontainer >h1{
+    padding-bottom: 5px;
+    text-transform: uppercase;
+
+}
+.projectcontainer>p
+{
+    
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 220px 10px 220px;
+}
+.projectcontainer__projects {
+    display: flex;
+    width: 90vw;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: flex-end;
+
+}
+@media only screen and (max-width: 600px)
+{
+    .projectcontainer__projects {
+        display: flex;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+
+    .projectcontainer>p
+{
+    
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 25px 1px 35px;
+}
+}

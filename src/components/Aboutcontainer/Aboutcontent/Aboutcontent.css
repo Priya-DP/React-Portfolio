@@ -1,0 +1,253 @@
+.about {
+    padding: 5rem 2rem 5rem 5rem;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row .column {
+    width: 43%;
+}
+
+.column .tabs {
+    display: flex;
+}
+
+.single_tab {
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.single_tab h2 {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: green;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.about_img {
+    position: relative;
+    background: url('../../../assets/skills2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 630px;
+    width: 100%;
+    top: 20px;
+
+}
+
+.content {
+
+    padding-bottom: 2rem;
+    display: none;
+}
+
+
+.active_content {
+    display: block;
+}
+
+.active_tab {
+    background: rgb(8, 145, 70);
+    position: relative;
+
+}
+
+
+.active_tab::before {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: rgb(8, 145, 70) transparent transparent transparent;
+}
+
+.active_tab h2 {
+    color: white;
+
+}
+
+pre {
+    font-size: 17px;
+    font-family: sans-serif;
+    color: rgb(8, 145, 70)
+}
+
+.content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    padding-bottom: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgb(8, 145, 70);
+}
+
+.skills_column h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+/* Skills CSS */
+.skill_row {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills_column {
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.progress_wrap h3 {
+    font-size: 14px !important;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+
+.progress {
+    height: 8px;
+    background: lightgreen;
+    overflow: visible;
+}
+
+.progress_bar {
+    width: 80%;
+    height: 8px;
+    background: rgb(8, 145, 70);
+    line-height: 1.2;
+    position: relative;
+    border-radius: 2px;
+}
+
+.progress_bar span {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(3, 87, 41);
+}
+
+.MYSQL {
+    width: 85%;
+}
+
+.PHP {
+    width: 60%;
+}
+
+.JAVASCRIPT {
+    width: 70%;
+}
+
+.HTML_CSS {
+    width: 80%;
+}
+
+.REACT {
+    width: 70%;
+}
+
+li {
+    color: rgb(8, 145, 70);
+}
+
+.exp_column span {
+    font-weight: 500;
+    color: rgb(231, 76, 4);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .about {
+        padding: 5rem 3rem 3rem 2rem;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_img {
+        height: 300px;
+        min-width: 350px;
+    }
+
+    .row.column {
+        width: 100%;
+    }
+
+    .tabs {
+        padding-top: 3rem;
+    }
+
+    .skill_row {
+        grid-template-columns: 1fr;
+
+    }
+
+    .exp_column {
+        min-width: 400px;
+    }
+
+    .content p {
+
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        width: 400px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+
+    .MYSQL {
+        
+        min-width: 350px;
+    }
+
+    .PHP {
+        min-width: 350px;
+    }
+
+    .JAVASCRIPT {
+        min-width: 350px;
+    }
+
+    .HTML_CSS {
+        min-width: 350px;
+    }
+
+    .REACT {
+        min-width: 350px;
+    }
+
+}
