@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-scroll';
 import './Topcontent.css'
-import DownloadCV from '../../../assets/Devipriya-CV.pdf';
+import DownloadCV from '../../../assets/Devipriya Full Stack Developer.pdf';
 
 const Topcontent = () => {
     return (
